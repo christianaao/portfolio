@@ -14,11 +14,11 @@ export const personalInfo = {
   location: "Manchester, UK",
   email: "ocolawuyi@outlook.com",
   // TODO (PLACEHOLDER): confirm/replace with your real profile URLs
-  github: "https://github.com/PLACEHOLDER-github-username",
-  linkedin: "https://www.linkedin.com/in/PLACEHOLDER-linkedin-handle",
+  github: "https://github.com/christianaao",
+  linkedin: "https://www.linkedin.com/in/olamide-olawuyi/",
   // TODO (PLACEHOLDER): add your real CV PDF to /public/olamide-olawuyi-cv.pdf
   // and update this path if you rename the file.
-  resumeUrl: "/olamide-olawuyi-cv-PLACEHOLDER.pdf",
+  resumeUrl: "/Olamide-Olawuyi-SoftwareDevCV.pdf",
 };
 
 export const about = {
@@ -64,9 +64,9 @@ export const projects: Project[] = [
       "A full-stack app for discovering and sharing hidden local spots, built with an interactive map experience and geocoding search.",
     tech: ["Next.js", "Firebase", "React Leaflet Maps", "Geocode.maps.co API", "Tailwind", "Yup Validation"],
     links: [
-      { label: "Website", url: "https://PLACEHOLDER-hidden-gems-site.example.com" },
-      { label: "Front End Repo", url: "https://github.com/PLACEHOLDER/hidden-gems-frontend" },
-      { label: "Back End Repo", url: "https://github.com/PLACEHOLDER/hidden-gems-backend" },
+      { label: "Website", url: "https://hidden-gems-oo.vercel.app/" },
+      { label: "Front End Repo", url: "https://github.com/christianaao/hidden-gems-frontend" },
+      { label: "Back End Repo", url: "https://github.com/christianaao/hidden-gems-backend" },
     ],
   },
   {
@@ -75,44 +75,44 @@ export const projects: Project[] = [
       "A Reddit-style news article platform with voting, commenting, and topic filtering, built using test-driven development.",
     tech: ["JavaScript", "React", "Express", "PostgreSQL", "CSS", "TDD"],
     links: [
-      { label: "Website", url: "https://PLACEHOLDER-news-app-site.example.com" },
-      { label: "Front End Repo", url: "https://github.com/PLACEHOLDER/news-app-frontend" },
-      { label: "Back End Repo", url: "https://github.com/PLACEHOLDER/news-app-backend" },
+      { label: "Website", url: "https://frontend-news-article-project.netlify.app/" },
+      { label: "Front End Repo", url: "https://github.com/christianaao/frontend-news-article-project" },
+      { label: "Back End Repo", url: "https://github.com/christianaao/backend-news-article-project" },
     ],
+  },
+  {
+    title: "CLI Blackjack Game",
+    description: "A command-line Blackjack game with colourful terminal output, built using test-driven development.",
+    tech: ["JavaScript", "Chalk", "TDD"],
+    links: [{ label: "Repo", url: "https://github.com/christianaao/blackjack-card-game" }],
   },
   {
     title: "Responsive Coffee Shop Website",
     description: "A fully responsive front-end website built from a pre-defined wireframe for a fictional coffee shop.",
     tech: ["HTML", "CSS"],
     links: [
-      { label: "Website", url: "https://PLACEHOLDER-coffee-shop-site.example.com" },
-      { label: "Repo", url: "https://github.com/PLACEHOLDER/coffee-shop" },
+      { label: "Website", url: "https://christianaao.github.io/coffee-shop/index.html" },
+      { label: "Repo", url: "https://github.com/christianaao/coffee-shop" },
     ],
   },
   {
     title: "Text-Based Story Game",
     description: "An interactive, branching text-based adventure game built in Python as part of a team project.",
     tech: ["Python"],
-    links: [{ label: "Repo", url: "https://github.com/PLACEHOLDER/text-based-story-game" }],
-  },
-  {
-    title: "CLI Blackjack Game",
-    description: "A command-line Blackjack game with colourful terminal output, built using test-driven development.",
-    tech: ["JavaScript", "Chalk", "TDD"],
-    links: [{ label: "Repo", url: "https://github.com/PLACEHOLDER/cli-blackjack" }],
+    links: [{ label: "Repo", url: "https://github.com/christianaao/murder-mystery-game" }],
   },
   {
     title: "Gibberish Query Detector (R&D)",
     description:
       "Researched and evaluated multiple Python/NLP libraries (including Lingua, NLTK, and regex-based heuristics) to detect nonsensical or gibberish search queries for a large-scale search engine. Designed test query sets and compared detection accuracy across libraries in a spike/results spreadsheet.",
-    tech: ["Python", "NLP", "Research & Evaluation"],
-    links: [],
+    tech: ["Python", "Gibberish Detector", "TheFuzz", "Research & Evaluation"],
+    links: [{label: "Repo", url: "https://github.com/christianaao/gibberish-detector-spike"}],
   },
   {
     title: "Search Intent Detection with spaCy (R&D)",
     description:
       "Explored spaCy and core NLP/NLU concepts to prototype query-intent detection (e.g. distinguishing questions from statements), aimed at improving search relevance and result ranking for a production search system.",
-    tech: ["Python", "spaCy", "NLP"],
+    tech: ["Python", "spaCy"],
     links: [],
   },
 ];
@@ -133,9 +133,9 @@ export const experience: ExperienceEntry[] = [
     period: "Sep 2025 – Present",
     bullets: [
       "Rotated across engineering teams (Search, Sport Data) on a structured graduate programme, gaining exposure to production systems serving millions of daily users",
-      "Search rotation: researched and evaluated NLP/Python libraries (e.g. spaCy, Lingua, NLTK) to detect gibberish queries and classify user search intent, improving query relevance for a large-scale search engine",
-      "Sport Data rotation: contributed frontend (React/TypeScript) and backend fixes for a high-traffic sports website, including data display corrections and support for a major live sporting event's features; gained hands-on AWS and on-call support experience",
-      "Practiced Agile ceremonies (standups, sprint planning, retrospectives), peer code review, and TDD across both rotations",
+      "Search rotation: researched and evaluated NLP/Python libraries (e.g. spaCy, TheFuzz, Giberish Detector, NLTK) to detect gibberish queries and classify user search intent, improving query relevance for a large-scale search engine",
+      "Sport Data rotation: contributed frontend (React/TypeScript) and backend solutions for a high-traffic public sports website, including data display corrections and support for live coverage of major sporting events such as the 2026 World Cup. Additionally, gained hands on AWS and on call-support experience.",
+      "Practiced Agile ceremonies such as standups, sprint planning, retrospectives and core development practices like peer code reviews and test-driven development across all rotations",
     ],
   },
   {
