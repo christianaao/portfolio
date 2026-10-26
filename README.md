@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Olamide Olawuyi — Portfolio
 
-## Getting Started
+Built with Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion, and `next-themes`.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚠️ Things YOU need to fill in before going live
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All editable content lives in **`src/data/portfolio.ts`**. Search that file for
+`PLACEHOLDER` or `TODO` comments. Specifically:
 
-## Learn More
+1. **GitHub & LinkedIn URLs** — `personalInfo.github` and `personalInfo.linkedin`
+   currently point to placeholder URLs.
+2. **CV / Resume PDF** — replace `public/olamide-olawuyi-cv-PLACEHOLDER.pdf` with
+   your real CV PDF. If you rename the file, update `personalInfo.resumeUrl` to match.
+3. **Project links** — every project in the `projects` array has one or more
+   `links` entries pointing to `PLACEHOLDER`/`example.com` URLs (live site, front-end
+   repo, back-end repo). Replace these with your real deployed URLs and GitHub repo
+   links as they become available. On the site itself, any placeholder link is
+   visually flagged with an **"Add your link"** badge so they're easy to spot.
+4. Two "R&D" project cards (Gibberish Query Detector, Search Intent Detection with
+   spaCy) deliberately have **no links** — these summarise generalized, non-confidential
+   work from your BBC grad scheme rotations. Do not add internal/employer-specific
+   links or details to these without checking they're appropriate to share publicly.
 
-To learn more about Next.js, take a look at the following resources:
+## Where everything lives
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/data/portfolio.ts` — all text content (bio, skills, projects, experience, contact)
+- `src/components/` — one component per section (hero, about, skills, projects,
+  experience, contact, nav, footer) plus `theme-toggle.tsx` / `theme-provider.tsx`
+  for dark mode and `reveal.tsx` for scroll-in animations
+- `src/app/globals.css` — the lavender/purple color theme (light + dark variants)
+- `public/` — static assets, including the CV placeholder PDF
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The project has no server-side dependencies, so it deploys cleanly to either
+[Vercel](https://vercel.com/new) or [Netlify](https://app.netlify.com/start) —
+just connect the GitHub repo once it's pushed.
