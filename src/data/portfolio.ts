@@ -2,36 +2,30 @@
 // PORTFOLIO CONTENT DATA
 // ----------------------------------------------------------------------------
 // This file holds all the editable text/content for the site.
-// Anywhere you see "PLACEHOLDER" or a TODO comment, that's something YOU
-// need to fill in (a real link, a file, a confirmed detail) before the
-// site goes live. Everything else is ready to use as-is.
 // ============================================================================
 
 export const personalInfo = {
   name: "Olamide Olawuyi",
   title: "Junior Software Engineer",
-  tagline: "Rebuilding my career, one commit at a time.",
+  tagline: "Turning curiosity into code",
   location: "Manchester, UK",
   email: "ocolawuyi@outlook.com",
-  // TODO (PLACEHOLDER): confirm/replace with your real profile URLs
   github: "https://github.com/christianaao",
   linkedin: "https://www.linkedin.com/in/olamide-olawuyi/",
-  // TODO (PLACEHOLDER): add your real CV PDF to /public/olamide-olawuyi-cv.pdf
-  // and update this path if you rename the file.
   resumeUrl: "/Olamide-Olawuyi-SoftwareDevCV.pdf",
 };
 
 export const about = {
   heading: "From conveyancing to code",
   paragraphs: [
-    "I spent over two years as a conveyancer and conveyancing assistant, managing property caseloads and drafting legal documents under pressure. It taught me precision, resilience, and how to communicate complex information clearly — skills that turned out to translate surprisingly well into software engineering.",
+    "I spent over two years as a conveyancer and conveyancing assistant, managing property caseloads and drafting legal documents under pressure. It taught me precision, resilience, and how to communicate complex information clearly. These skills allowed me to easily transition to software engineering.",
     "After deciding to pursue what I was genuinely passionate about, I completed Northcoders' intensive full-stack bootcamp, building full-stack JavaScript applications from scratch and working in Agile teams. I'm now a Junior Software Engineer on a graduate scheme, rotating across engineering teams and continuing to learn every day.",
-    "I bring a different perspective to engineering teams: someone who has worked under real-world deadlines, dealt with people and process, and now channels that same discipline into writing and testing code.",
+    "I bring a different perspective to engineering teams: someone who has worked under real-world deadlines, dealt with people and processes, and now channels that same discipline into spiking, writing and testing code.",
   ],
   funFacts: [
-    { label: "Boxing", detail: "Weekly women's boxing sessions — great for discipline and stress relief." },
-    { label: "Gaming", detail: "Into strategy and team-based games." },
-    { label: "Travelling", detail: "Always chasing new food and new cultures." },
+    { label: "Swimming", detail: "Weekly swimming sessions, great for a full body workout." },
+    { label: "Gaming", detail: "I love strategy and team-based games." },
+    { label: "Travelling", detail: "Exploring new food and cultures." },
   ],
 };
 
@@ -53,7 +47,6 @@ export type Project = {
   title: string;
   description: string;
   tech: string[];
-  // TODO (PLACEHOLDER): replace with your real links where available.
   links: { label: string; url: string }[];
 };
 
@@ -156,7 +149,7 @@ export const experience: ExperienceEntry[] = [
     location: "Remote",
     period: "Jun 2024 – Oct 2024",
     bullets: [
-      "Completed an intensive, Level 4-equivalent full-stack software development bootcamp",
+      "Completed an intensive, Level 4-equivalent full-stack software development bootcamp in JavaScript",
       "Teamed up with other developers to build a full-stack application over a three-week period using Agile workflow",
       "Deepened knowledge of JavaScript fundamentals, front-end, and back-end programming",
       "Tackled coding sprints and katas through Test-Driven Development and paired programming",
@@ -178,5 +171,5 @@ export const experience: ExperienceEntry[] = [
 export const contact = {
   heading: "Let's talk",
   blurb:
-    "I'm always happy to chat about opportunities, collaborations, or just software. Reach out through any of the channels below.",
+    "I'm happy to chat about opportunities, collaborations, or software. Reach out through any of the channels below.",
 };

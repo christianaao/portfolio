@@ -9,6 +9,7 @@ export function Footer() {
   // static prerendering).
   const [year, setYear] = useState<number>(2026);
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setYear(new Date().getFullYear());
   }, []);
 
