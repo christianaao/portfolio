@@ -25,10 +25,17 @@ Then open **http://localhost:3000** in your browser.
 ### Other useful commands
 
 ```bash
-npm run build   # production build
-npm run start   # run the production build locally
-npm run lint    # lint the codebase
+npm run build       # static export (outputs to ./out)
+npx serve out        # preview the static export locally
+npm run lint          # lint the codebase
 ```
+
+## Deployment
+
+This site is a static export (`output: "export"` in `next.config.ts`) and is
+automatically built and deployed to **GitHub Pages** via
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on every push to
+`main`. It's live at **https://christianaao.github.io/portfolio/**.
 
 ## Project structure
 

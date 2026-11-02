@@ -12,7 +12,7 @@ export const personalInfo = {
   email: "ocolawuyi@outlook.com",
   github: "https://github.com/christianaao",
   linkedin: "https://www.linkedin.com/in/olamide-olawuyi/",
-  resumeUrl: "/Olamide-Olawuyi-SoftwareDevCV.pdf",
+  resumeUrl: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/Olamide-Olawuyi-SoftwareDevCV.pdf`,
 };
 
 export const about = {
