@@ -47,17 +47,37 @@ export type Project = {
   title: string;
   description: string;
   tech: string[];
-  links: { label: string; url: string }[];
+  links: { label: string; url: string; note?: string }[];
 };
 
 export const projects: Project[] = [
+  {
+    title: "Gibberish Query Detector (R&D)",
+    description:
+      "Researched and evaluated multiple Python/NLP libraries (including Lingua, NLTK, and regex-based heuristics) to detect nonsensical or gibberish search queries for a large-scale search engine. Designed test query sets and compared detection accuracy across libraries in a spike/results spreadsheet.",
+    tech: ["Python", "Gibberish Detector", "TheFuzz", "Research & Evaluation"],
+    links: [{label: "Repo", url: "https://github.com/christianaao/gibberish-detector-spike"}],
+  },
+  {
+    title: "Search Intent Detection with spaCy (R&D)",
+    description:
+      "Explored spaCy and core NLP/NLU concepts to prototype query-intent detection (e.g. distinguishing questions from statements), aimed at improving search relevance and result ranking for a production search system.",
+    tech: ["Python", "spaCy"],
+    links: [],
+  },
+  {
+    title: "CLI Blackjack Game",
+    description: "A command-line Blackjack game with colourful terminal output, built using test-driven development.",
+    tech: ["JavaScript", "Chalk", "TDD"],
+    links: [{ label: "Repo", url: "https://github.com/christianaao/blackjack-card-game" }],
+  },
   {
     title: "Full Stack Hidden Gems App",
     description:
       "A full-stack app for discovering and sharing hidden local spots, built with an interactive map experience and geocoding search.",
     tech: ["Next.js", "Firebase", "React Leaflet Maps", "Geocode.maps.co API", "Tailwind", "Yup Validation"],
     links: [
-      { label: "Website", url: "https://hidden-gems-oo.vercel.app/" },
+      { label: "Website", url: "https://hidden-gems-oo.vercel.app/", note: "Database not connected" },
       { label: "Front End Repo", url: "https://github.com/christianaao/hidden-gems-frontend" },
       { label: "Back End Repo", url: "https://github.com/christianaao/hidden-gems-backend" },
     ],
@@ -68,16 +88,10 @@ export const projects: Project[] = [
       "A Reddit-style news article platform with voting, commenting, and topic filtering, built using test-driven development.",
     tech: ["JavaScript", "React", "Express", "PostgreSQL", "CSS", "TDD"],
     links: [
-      { label: "Website", url: "https://frontend-news-article-project.netlify.app/" },
+      { label: "Website", url: "https://frontend-news-article-project.netlify.app/", note: "Database not connected" },
       { label: "Front End Repo", url: "https://github.com/christianaao/frontend-news-article-project" },
       { label: "Back End Repo", url: "https://github.com/christianaao/backend-news-article-project" },
     ],
-  },
-  {
-    title: "CLI Blackjack Game",
-    description: "A command-line Blackjack game with colourful terminal output, built using test-driven development.",
-    tech: ["JavaScript", "Chalk", "TDD"],
-    links: [{ label: "Repo", url: "https://github.com/christianaao/blackjack-card-game" }],
   },
   {
     title: "Responsive Coffee Shop Website",
@@ -93,20 +107,6 @@ export const projects: Project[] = [
     description: "An interactive, branching text-based adventure game built in Python as part of a team project.",
     tech: ["Python"],
     links: [{ label: "Repo", url: "https://github.com/christianaao/murder-mystery-game" }],
-  },
-  {
-    title: "Gibberish Query Detector (R&D)",
-    description:
-      "Researched and evaluated multiple Python/NLP libraries (including Lingua, NLTK, and regex-based heuristics) to detect nonsensical or gibberish search queries for a large-scale search engine. Designed test query sets and compared detection accuracy across libraries in a spike/results spreadsheet.",
-    tech: ["Python", "Gibberish Detector", "TheFuzz", "Research & Evaluation"],
-    links: [{label: "Repo", url: "https://github.com/christianaao/gibberish-detector-spike"}],
-  },
-  {
-    title: "Search Intent Detection with spaCy (R&D)",
-    description:
-      "Explored spaCy and core NLP/NLU concepts to prototype query-intent detection (e.g. distinguishing questions from statements), aimed at improving search relevance and result ranking for a production search system.",
-    tech: ["Python", "spaCy"],
-    links: [],
   },
 ];
 
